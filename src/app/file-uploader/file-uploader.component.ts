@@ -19,7 +19,7 @@ export class FileUploaderComponent implements OnInit {
 
   onFileSelection(event) {
     // add extension validation with event.target.value;
-    const fileBlob = event.target.files[0]
+    const fileBlob = event.target.files[0];
     // size validation event.target.files[0].size
     this.fileService.validate(fileBlob);
     // this.fileService.validate(event.target.value);
